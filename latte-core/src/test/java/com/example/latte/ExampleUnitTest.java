@@ -1,4 +1,4 @@
-package com.example.core;
+package com.example.latte;
 
 import org.junit.Test;
 

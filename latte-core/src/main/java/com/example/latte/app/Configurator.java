@@ -1,4 +1,4 @@
-package com.example.core.app;
+package com.example.latte.app;
 
 import com.joanzapata.iconify.IconFontDescriptor;
 import com.joanzapata.iconify.Iconify;
@@ -59,11 +59,12 @@ public class Configurator {
         return this;
     }
 
-//    配置字体
+    //    配置字体
     public final Configurator withIcon(IconFontDescriptor descriptor) {
         ICONS.add(descriptor);
         return this;
     }
+
     //    对是否完成配置做检查
     private void checkConfiguration() {
         final boolean isReady = (boolean) LATTE_CONFIGS.get(ConfigType.CONFIG_READY.name());

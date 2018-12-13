@@ -1,4 +1,4 @@
-package com.example.core.app;
+package com.example.latte.app;
 
 public enum ConfigType {
     //    网络请求域名

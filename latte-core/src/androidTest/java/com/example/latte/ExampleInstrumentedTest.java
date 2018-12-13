@@ -1,4 +1,4 @@
-package com.example.core;
+package com.example.latte;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
