@@ -1,4 +1,4 @@
-package com.example.latte_core.app;
+package com.example.core.app;
 
 import android.content.Context;
 

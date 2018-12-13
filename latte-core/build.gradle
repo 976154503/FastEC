@@ -30,5 +30,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation project(':latte_annotations')
+    implementation project(':latte-annotations')
+//    字体图片
+    implementation ('com.joanzapata.iconify:android-iconify-fontawesome:2.2.2') {
+        exclude group: 'com.android.support'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-v4'
+    }
+    implementation ('com.joanzapata.iconify:android-iconify-ionicons:2.2.2') {
+        exclude group: 'com.android.support'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-v4'
+    }
 }
