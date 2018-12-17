@@ -4,14 +4,14 @@ import com.joanzapata.iconify.IconFontDescriptor;
 import com.joanzapata.iconify.Iconify;
 
 import java.util.ArrayList;
-import java.util.WeakHashMap;
+import java.util.HashMap;
 
 /*
  * 配置文件的存储以及获取类
  * */
 public class Configurator {
     //    储存各类配置项的map 比HashMap的优势是在不使用时能更快的回收
-    private static final WeakHashMap<String, Object> LATTE_CONFIGS = new WeakHashMap<>();
+    private static final HashMap<String, Object> LATTE_CONFIGS = new HashMap<>();
     //存储字体的ArreyList
     private static final ArrayList<IconFontDescriptor> ICONS = new ArrayList<>();
 
@@ -30,7 +30,7 @@ public class Configurator {
         return Holder.INSTANCE;
     }
 
-    final WeakHashMap<String, Object> getLatteConfigs() {
+    final HashMap<String, Object> getLatteConfigs() {
         return LATTE_CONFIGS;
     }
 
